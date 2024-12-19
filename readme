@@ -1,2 +1,13 @@
+Re-labeled bounding boxes of test subset in IRDST [1].
+The original/offcial dataset can be referred to http://xzbai.buaa.edu.cn/datasets.html
 
-Re-labeled bounding boxes of test subset in IRDST.
+We only annotated the bounding boxes for testing purposes, without providing the complete segmentation and bounding box labels as offered by the original authors. Our labels were annotated under local zoom conditions. Since we apply gray-level stretching during the local image display, diffused edge pixels are marked as part of the infrared small target within the regression box.
+
+Based on our understanding, the re-labeled bounding boxes are superior to the original official box labels, which can provide valuable reference for future researchers. It is worth noting that we previously contacted the original authors to point out certain issues with the labels, and they may have optimized some of them.
+
+We consider the official segmentation labels [1] to be generally reasonable. When comparing the bounding boxes of these official segmentation labels with our re-labeled ones, the official labels tend to include fewer diffused edge pixels of the target. However, the assessment of which set of labels is more reasonable may vary among different researchers. Therefore, it is important to note that the bounding box labels we re-labeled are intended solely as a reference for research purposes.
+
+If anyone has any questions, feel free to leave a comment or contact us via email. More information and our work will be provide in the near feature.
+e-mail:xuhai_0513@foxmail.com
+
+[1] H. Sun, J. Bai, F. Yang, and X. Bai, “Receptive-field and direction induced attention network for infrared dim small target detection with a large-scale dataset irdst,” IEEE Transactions on Geoscience and Remote Sensing, vol. 61, pp. 1–13, 2023.
