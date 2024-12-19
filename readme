@@ -3,6 +3,23 @@ The original/offcial dataset can be referred to http://xzbai.buaa.edu.cn/dataset
 
 We only annotated the bounding boxes for testing purposes, without providing the complete segmentation and bounding box labels as offered by the original authors. Our labels were annotated under local zoom conditions. Since we apply gray-level stretching during the local image display, diffused edge pixels are marked as part of the infrared small target within the regression box.
 
+=========================
+Label Information
+L cx cy w h
+L: class id (Unused, usually set 0)
+cx, cy: target center point
+w, h: target size
+
+Convert the labels into actual coordinates in the image by:
+cx*img_w cy*img_h w*384 h*img_h
+img_w, img_h: the size of the image.
+
+All images are labeled on the Matlab Platform. So when you are adopting our labels on Pycharm or VS, you have to decrease the cx and cy by one on pixel scale.
+For example (assume img_w=384):
+  On Matlab:  x∈[1,384]
+  On Pycharm: x-1∈[0,383]
+========================
+
 Based on our understanding, the re-labeled bounding boxes are superior to the original official box labels, which can provide valuable reference for future researchers. It is worth noting that we previously contacted the original authors to point out certain issues with the labels, and they may have optimized some of them.
 
 We consider the official segmentation labels [1] to be generally reasonable. When comparing the bounding boxes of these official segmentation labels with our re-labeled ones, the official labels tend to include fewer diffused edge pixels of the target. However, the assessment of which set of labels is more reasonable may vary among different researchers. Therefore, it is important to note that the bounding box labels we re-labeled are intended solely as a reference for research purposes.
