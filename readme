@@ -23,7 +23,8 @@ For example (assume img_w=384):
 Based on our understanding, the re-labeled bounding boxes are superior to the original official box labels, which can provide a valuable reference for future researchers. It is worth noting that we previously contacted the original authors to point out certain issues with the labels, and they may have optimized some of them.
 
 markdown
-**We consider the official segmentation labels [1] to be generally reasonable.** When comparing the bounding boxes of these official segmentation labels with our re-labeled ones, the official labels tend to include fewer diffused edge pixels of the target. However, the assessment of which set of labels is more reasonable may vary among different researchers. Therefore, it is important to note that the bounding box labels we re-labeled are intended solely as a reference for research purposes.
+
+__We consider the official segmentation labels [1] to be generally reasonable.__ When comparing the bounding boxes of these official segmentation labels with our re-labeled ones, the official labels tend to include fewer diffused edge pixels of the target. However, the assessment of which set of labels is more reasonable may vary among different researchers. Therefore, it is important to note that the bounding box labels we re-labeled are intended solely as a reference for research purposes.
 
 We have completed a manuscript (soon to be or already submitted to TGRS), which includes some visual comparisons. If you are eager to cite these re-labeled annotations, feel free to contact us, and we may consider uploading a version to arXiv in advance. Alternatively, you can also freely cite the webpage following the relevant guidelines of any journal or conference directly.
 
