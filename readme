@@ -11,7 +11,7 @@ cx, cy: target center point
 w, h: target size
 
 Convert the labels into actual coordinates in the image by:
-cx*img_w cy*img_h w*384 h*img_h
+cx*img_w cy*img_h w*img_w h*img_h
 img_w, img_h: the size of the image.
 
 All images are labeled on the Matlab Platform. So when you are adopting our labels on Pycharm or VS, you have to decrease the cx and cy by one on a pixel scale.
