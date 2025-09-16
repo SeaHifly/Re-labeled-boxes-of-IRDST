@@ -14,7 +14,7 @@ Convert the labels into actual coordinates in the image by:
 cx*img_w cy*img_h w*img_w h*img_h
 img_w, img_h: the size of the image.
 
-All images are labeled on the Matlab Platform. So when you are adopting our labels on Pycharm or VS, you have to decrease the cx and cy by one on a pixel scale.
+All images are labeled on the MATLAB platform. So when you are adopting our labels on PyCharm or VS, you have to decrease the cx and cy by one on a pixel scale.
 For example (assume img_w=384):
   On Matlab:  x∈[1,384]
   On Pycharm: x-1∈[0,383]
@@ -26,12 +26,10 @@ markdown
 
 __We consider the official segmentation labels [2] to be generally reasonable.__ When comparing the bounding boxes of these official segmentation labels with our re-labeled ones, the official labels tend to include fewer diffused edge pixels of the target. However, the assessment of which set of labels is more reasonable may vary among different researchers. Therefore, it is important to note that the bounding box labels we re-labeled are intended solely as a reference for research purposes.
 
-We have completed a manuscript (soon to be or already submitted to TGRS), which includes some visual comparisons. If you are eager to cite these re-labeled annotations, feel free to contact us, and we may consider uploading a version to arXiv in advance. Alternatively, you can also freely cite the webpage following the relevant guidelines of any journal or conference directly.
-
 If anyone has any questions, feel free to leave a comment or contact us via email. More information and our work will be provided in the near future.
 
 e-mail:xuhai_0513@foxmail.com
 
-Reference:
-[1] Xu H, Zhou H, Zhong S, et al. Consistent Learning of Sparse Background Features for Infrared Small Target Labeling[J]. IEEE Transactions on Geoscience and Remote Sensing, 2025
+If you think the above relabeled labels are valuable for you, please consider citing the following references:
+[1] Xu H, Zhou H, Zhong S, et al. Consistent Learning of Sparse Background Features for Infrared Small Target Labeling[J]. IEEE Transactions on Geoscience and Remote Sensing, 2025 
 [2] H. Sun, J. Bai, F. Yang, and X. Bai, “Receptive-field and direction induced attention network for infrared dim small target detection with a large-scale dataset irdst,” IEEE Transactions on Geoscience and Remote Sensing, vol. 61, pp. 1–13, 2023.
