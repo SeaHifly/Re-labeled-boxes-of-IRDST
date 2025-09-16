@@ -1,4 +1,4 @@
-Re-labeled bounding boxes of test subset in IRDST [1].
+Re-labeled bounding boxes of the test subset in IRDST [2].
 The original/official dataset can be referred to http://xzbai.buaa.edu.cn/datasets.html.
 
 We only annotated the bounding boxes for testing purposes, without providing the complete segmentation and bounding box labels as offered by the original authors. Our labels were annotated under local zoom conditions. Since we apply gray-level stretching during the local image display, diffused edge pixels are marked as part of the infrared small target within the regression box.
@@ -24,7 +24,7 @@ Based on our understanding, the re-labeled bounding boxes are superior to the or
 
 markdown
 
-__We consider the official segmentation labels [1] to be generally reasonable.__ When comparing the bounding boxes of these official segmentation labels with our re-labeled ones, the official labels tend to include fewer diffused edge pixels of the target. However, the assessment of which set of labels is more reasonable may vary among different researchers. Therefore, it is important to note that the bounding box labels we re-labeled are intended solely as a reference for research purposes.
+__We consider the official segmentation labels [2] to be generally reasonable.__ When comparing the bounding boxes of these official segmentation labels with our re-labeled ones, the official labels tend to include fewer diffused edge pixels of the target. However, the assessment of which set of labels is more reasonable may vary among different researchers. Therefore, it is important to note that the bounding box labels we re-labeled are intended solely as a reference for research purposes.
 
 We have completed a manuscript (soon to be or already submitted to TGRS), which includes some visual comparisons. If you are eager to cite these re-labeled annotations, feel free to contact us, and we may consider uploading a version to arXiv in advance. Alternatively, you can also freely cite the webpage following the relevant guidelines of any journal or conference directly.
 
